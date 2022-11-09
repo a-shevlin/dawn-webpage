@@ -1,13 +1,11 @@
 import React from 'react';
 import Tick from './components/Tick';
-import './app.css';
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <Tick />
-      </header>
+    <div class="bg-base-panel bg-no-repeat bg-cover h-screen ">
+      <Tick />
     </div>
   );
 }

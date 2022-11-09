@@ -9,9 +9,8 @@ function Tick() {
     }, 1000);
   }, []);
   return (
-    <div id="tick">
-      <h1>Hello, world!</h1>
-      <h2>It is {time}.</h2>
+    <div class="h-full flex justify-center items-center">
+      <h2 class="text-slate-400 font-bold text-5xl">It is {time}.</h2>
     </div>
   );
 }
