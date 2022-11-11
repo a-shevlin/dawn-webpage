@@ -1,11 +1,15 @@
 import React from 'react';
-import Tick from './components/Tick';
+import { Clock, TitleCard } from './components';
 
 
 function App() {
   return (
-    <div class="bg-base-panel bg-no-repeat bg-cover h-screen ">
-      <Tick />
+    <div className="bg-base-panel bg-no-repeat bg-cover h-screen bg-fixed">
+      <TitleCard />
+      <div className="flex-1 w-full z-10 h-full">
+        <Clock />
+
+      </div>
     </div>
   );
 }
