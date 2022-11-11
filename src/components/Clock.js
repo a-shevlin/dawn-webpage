@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 
-function Tick() {
+function Clock() {
   const [time, setTime] = useState(null)
 
   useEffect(() => {
@@ -9,10 +9,10 @@ function Tick() {
     }, 1000);
   }, []);
   return (
-    <div class="h-full flex justify-center items-center">
-      <h2 class="text-slate-400 font-bold text-5xl">It is {time}.</h2>
+    <div className="h-full flex justify-center items-center">
+      <h2 className="text-slate-400 font-bold text-9xl drop-shadow-md">{time}</h2>
     </div>
   );
 }
 
-export default Tick;
+export default Clock;
