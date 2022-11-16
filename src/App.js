@@ -1,15 +1,14 @@
 import React from 'react';
-import { Clock, TitleCard } from './components';
+import { Clock, TitleCard, Home } from './components';
 
 
 function App() {
   return (
-    <div className="bg-base-panel bg-no-repeat bg-cover h-screen bg-fixed">
+    <div className="h-screen">
       <TitleCard />
-      <div className="flex-1 w-full z-10 h-full">
-        <Clock />
-
-      </div>
+      {/* <div className="flex-1 w-full z-10 h-full">
+        <Home />
+      </div> */}
     </div>
   );
 }
