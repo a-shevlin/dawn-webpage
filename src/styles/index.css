@@ -2,3 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
+.titleCardFade {
+  transition-timing-function: ease-in;
+  transition: 0.5s;
+}
