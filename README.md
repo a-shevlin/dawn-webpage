@@ -16,4 +16,4 @@ _A company website for Dawn Servers. Organized for users to find information rel
 
 ## Contact
 
-[Alex Shevlin](mailto:)
+[Alex Shevlin](mailto:alexshevlin1@gmail.com)
