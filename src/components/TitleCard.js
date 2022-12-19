@@ -1,11 +1,22 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import dawnLogo from '../assets/logo_tra.png';
 
 function TitleCard() {
   const [currentScrollHeight, setCurrentScrollHeight] = useState(1);
   const [show, setShow] = useState(true);
+  const [copySuccess, setCopySuccess] = useState('');
+  const [hover, setHover] = useState(false);
+  const [click, setClick] = useState(false);
+
+  const onHover = () => {
+    setHover(!hover)
+  }
+
+  const onLinkClick = () => {
+    setClick(!click);
+  }
   
-  useEffect(() => {      
+  useEffect(() => {  
     window.onscroll =()=>{
       console.log(window.scrollY);
       // might need to change based on screen size
@@ -17,6 +28,15 @@ function TitleCard() {
     }
   }, []);
   
+  const copyThing = () => {
+    navigator.clipboard.writeText('mc.dawnserver.com');
+    onLinkClick();
+
+  }
+
+  const textAreaRef = useRef(null);
+
+
 
 
   return (
@@ -25,7 +45,20 @@ function TitleCard() {
         <img className="w-36 block mx-auto my-0" src={dawnLogo} alt="dawn logo" />
         <h1 className="text-8xl text-white mt-0">DAWN</h1>
         <p className="text-2xl">we are designers for the dawn of your creation</p>
-        <p className="text-xl border-double border-4 border-white rounded-md w-fit mx-auto p-1">mc.dawnserver.com</p>
+        <p 
+          className="text-lg border-double border-4 border-white rounded-md w-fit mx-auto p-1 my-5"
+          onClick={() =>  copyThing()}
+          style={{cursor: "pointer"}}
+          onMouseEnter={onHover}
+          onMouseLeave={onHover}
+          
+          >
+            mc.dawnserver.com
+        </p>
+        {
+          click && hover ? "copied!" : hover ? "click to copy!":  
+          ""  
+        } 
       </div>
     </div>
   )
