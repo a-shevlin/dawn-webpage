@@ -1,11 +1,18 @@
 import React from 'react';
-import { Clock, TitleCard, Home } from './components';
+import { TitleCard, Home, AllTiles } from './components';
+import {
+  BrowserRouter as Router,
+  Routes,
+  Route,
+  Link
+} from "react-router-dom";
 
 
 function App() {
   return (
-    <div className="h-screen">
+    <div className="h-screen bg-red-100">
       <TitleCard />
+      <AllTiles />
       {/* <div className="flex-1 w-full z-10 h-full">
         <Home />
       </div> */}
