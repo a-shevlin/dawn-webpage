@@ -2,6 +2,14 @@
 @tailwind components;
 @tailwind utilities;
 
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #e4e4e4;
+}
+
 .titleCardFade {
   transition-timing-function: ease-in;
   transition: 0.5s;

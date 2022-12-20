@@ -40,7 +40,7 @@ function TitleCard() {
 
 
   return (
-    <div className='w-full flex flex-col justify-center bg-fixed sticky bg-base-panel bg-no-repeat bg-cover h-2/5'>
+    <div className='w-full flex flex-col justify-center bg-cover sticky bg-base-panel bg-no-repeat bg-cover h-2/5'>
       <div className={`text-red-100 font-mono fixed mx-auto w-full my-auto titleCardFade tracking-narrow drop-shadow-lg font-bold p-0 text-center uppercase justify-center m-10 ${!show && 'opacity-0'}`}>
         <img className="w-36 block mx-auto my-0" src={dawnLogo} alt="dawn logo" />
         <h1 className="text-8xl text-white mt-0">DAWN</h1>

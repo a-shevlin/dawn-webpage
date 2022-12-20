@@ -50,8 +50,8 @@ const data = [
 function AllTiles() {
   return(
     <React.Fragment>
-      <div className='w-full flex flex-col justify-center'>
-        <div className='text-zinc-500 font-mono mx-auto w-full my-auto titleCardFade tracking-narrow drop-shadow-lg font-bold p-0 text-center uppercase justify-center m-10'>
+      <div className='w-full flex flex-col justify-center py-10 bg-zinc-200'>
+        <div className='text-zinc-500 font-mono mx-auto w-full my-auto titleCardFade tracking-narrow drop-shadow-lg font-bold p-0 text-center uppercase justify-center grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4'>
 
           {Object.values(data).map((tile) =>(
             <Tiles
