@@ -1,54 +1,53 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { Link } from 'react-router-dom';
-
-const data = [
-  {
-    name: "home",
-    id: 1,
-  },
-  {
-    name: "about us",
-    id: 2
-  },
-  {
-    name: "services",
-    id: 3
-  },
-  {
-    name: "news",
-    id: 4
-  },
-  {
-    name: "discord",
-    id: 5
-  },
-  {
-    name: "store",
-    id: 6
-  },
-  {
-    name: "marketplace",
-    id: 7
-  },
-]
+import { pages }from "../data";
 
 function PageLinks() {
-  return(
-    <nav className="bg-zinc-200 text-center flex flex-wrap space-x-3 w-full justify-center pt-8">
-      
+  const [width, setWidth] = useState(false);
 
-      {
-        Object.values(data).map((page) => (
-          <div className="inline-block px-5 text-slate-600 uppercase font-thin text-xl">
+  useEffect(() => {
+    window.onresize = () => {
+      (window.innerWidth < 950) ? setWidth(true) : setWidth(false);
+    }
+  }, []);
+  return(
+    <React.Fragment>
+      <nav className="bg-zinc-200 dark:bg-zinc-700 text-center flex flex-wrap space-x-3 w-full justify-center pt-5 pb-4 z-50">
+    { !width ?
+      <div>
+
+        {Object.values(pages).map((page) => (
+          <div className="inline-block lg:blocks p-2 px-5 text-zinc-600 hover:text-red-500 hover:drop-shadow-md dark:text-zinc-100 dark:hover:text-red-300 hover:cursor-pointer uppercase scale-y-90 tracking-wide font-thin text-xl hover:dark:bg-zinc-750 hover:bg-zinc-300 rounded-lg">
             {/* <Link to={`/${page.name}`}> */}
 
               {page.name}
             {/* </Link> */}
           </div>
-        ))
+        ))} 
+      </div>
+    : 
+      <div>
+        <button className="text-right">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" className="w-8 h-6 dark:text-zinc-200 stroke-current rounded-lg dark:ahover:bg-gray-700">
+            <path d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+          </svg>
+        </button>
+        <div>
+        {Object.values(pages).map((page) => (
+          <div className="text-left lg:blocks px-5 text-zinc-600 hover:text-red-400 hover:drop-shadow-md dark:text-zinc-100 dark:hover:text-red-200 hover:cursor-pointer uppercase scale-y-90 tracking-wide font-thin text-xl hover:dark:bg-stone-700">
+            {/* <Link to={`/${page.name}`}> */}
+
+              {page.name}
+            {/* </Link> */}
+          </div>
+        ))}
+        </div>
+      </div>
       }
     </nav>
+  </React.Fragment>
   )
 }
 
 export default PageLinks;
+
