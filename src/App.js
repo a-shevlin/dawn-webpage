@@ -11,8 +11,7 @@ import {
 function App() {
   return (
     <div className="h-screen bg-zinc-200">
-      <TitleCard />
-      <AllTiles />
+      <Home/>
       {/* <div className="flex-1 w-full z-10 h-full">
         <Home />
       </div> */}
