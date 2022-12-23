@@ -20,7 +20,7 @@ function TitleCard() {
     window.onscroll =()=>{
       console.log(window.scrollY);
       // might need to change based on screen size
-      if (window.scrollY > 70){
+      if (window.scrollY > 90){
         setShow(false);
       } else {
         setShow(true);
@@ -40,13 +40,13 @@ function TitleCard() {
 
 
   return (
-    <div className='w-full flex flex-col justify-center bg-cover sticky bg-base-panel bg-no-repeat bg-cover h-2/5'>
-      <div className={`text-red-100 font-mono fixed mx-auto w-full my-auto titleCardFade tracking-narrow drop-shadow-lg font-bold p-0 text-center uppercase justify-center m-10 ${!show && 'opacity-0'}`}>
-        <img className="w-36 block mx-auto my-0" src={dawnLogo} alt="dawn logo" />
-        <h1 className="text-8xl text-white mt-0">DAWN</h1>
-        <p className="text-2xl">we are designers for the dawn of your creation</p>
+    <div className='w-full flex flex-col justify-center bg-cover sticky bg-base-panel bg-no-repeat bg-center h-full justify-center'>
+      <div className={`text-red-100 font-mono fixed mx-auto w-full my-auto titleCardFade drop-shadow-lg font-bold p-0 text-center uppercase  ${!show && 'opacity-0'}`}>
+        <img className="w-32 block mx-auto" src={dawnLogo} alt="dawn logo" />
+        <h1 className="text-8xl tracking-wide text-white -mt-4 scale-y-90">DAWN</h1>
+        <p className="text-2xl tracking-wider">we are designers for the dawn of your creation</p>
         <p 
-          className="text-lg border-double border-4 border-white rounded-md w-fit mx-auto p-1 mt-2"
+          className="text-lg border-double border-4 border-white rounded-md w-fit mx-auto p-1 mt-2 tracking-wider"
           onClick={() =>  copyThing()}
           style={{cursor: "pointer"}}
           onMouseEnter={onHover}
