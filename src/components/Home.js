@@ -6,8 +6,8 @@ function Home() {
     <React.Fragment>
       <div className="h-screen">
         
-        <TitleCard />
-        <PageLinks />
+        {/* <TitleCard /> */}
+        
         <AllTiles />
       </div>
     </React.Fragment>
