@@ -3,7 +3,6 @@ import PropTypes from "prop-types";
 import { Tiles } from "./";
 import bg from '../assets/dawn-bg.png';
 
-
 const data = [
   {
     id: 0,
@@ -50,8 +49,8 @@ const data = [
 function AllTiles() {
   return(
     <React.Fragment>
-      <div className='w-full flex flex-col justify-center py-8 bg-zinc-200'>
-        <div className='text-zinc-500 font-mono mx-auto w-full my-auto titleCardFade tracking-narrow drop-shadow-lg font-bold p-0 text-center uppercase justify-center grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4'>
+      <div className='w-full h-full flex flex-col bg-zinc-200 dark:bg-zinc-700 p-1 z-10'>
+        <div className='text-zinc-500 font-mono mx-auto w-full titleCardFade tracking-narrow drop-shadow-lg font-bold p-0 text-center uppercase grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4'>
 
           {Object.values(data).map((tile) =>(
             <Tiles
