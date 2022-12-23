@@ -6,7 +6,8 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        '': {
+        'zinc': {
+          750: '#2c2c30',
 
         }
       },
@@ -15,9 +16,6 @@ module.exports = {
       },
       zIndex: {
         '1': '1',
-      },
-      screens: {
-        'xs': '540',
       }
     },
   },
