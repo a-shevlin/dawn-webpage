@@ -12,12 +12,12 @@ function PageLinks() {
   }, []);
   return(
     <React.Fragment>
-      <nav className="bg-zinc-200 dark:bg-zinc-700 text-center flex flex-wrap space-x-3 w-full justify-center pt-5 pb-4 z-50">
+      <nav className="bg-zinc-200 dark:bg-zinc-750 text-center flex flex-wrap space-x-3 w-full justify-center pt-5 pb-4 z-50">
     { !width ?
       <div>
 
         {Object.values(pages).map((page) => (
-          <div className="inline-block lg:blocks p-2 px-5 text-zinc-600 hover:text-red-500 hover:drop-shadow-md dark:text-zinc-100 dark:hover:text-red-300 hover:cursor-pointer uppercase scale-y-90 tracking-wide font-thin text-xl hover:dark:bg-zinc-750 hover:bg-zinc-300 rounded-lg">
+          <div className="inline-block lg:blocks p-2 px-5 text-zinc-600 hover:text-red-500 hover:drop-shadow-md dark:text-zinc-100 dark:hover:text-red-300 hover:cursor-pointer uppercase scale-y-90 tracking-wide font-thin text-xl hover:dark:bg-zinc-700 hover:bg-zinc-300 rounded-lg">
             {/* <Link to={`/${page.name}`}> */}
 
               {page.name}
