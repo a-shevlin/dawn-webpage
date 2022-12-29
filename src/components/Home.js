@@ -1,13 +1,10 @@
 import React from "react";
-import { TitleCard, AllTiles, PageLinks } from "./";
+import { AllTiles } from "./";
 
 function Home() {
   return(
     <React.Fragment>
-      <div className="h-screen">
-        
-        {/* <TitleCard /> */}
-        
+      <div className="h-screen dark:bg-slate-800">
         <AllTiles />
       </div>
     </React.Fragment>
