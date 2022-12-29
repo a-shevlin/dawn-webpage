@@ -62,7 +62,7 @@ function TitleCard(props) {
         <img className="w-32 block mx-auto" src={dawnLogo} alt="dawn logo" />
         <h1 className={`text-8xl tracking-wide text-white -mt-4 scale-y-90`}>
           {
-            window.location.pathname === "/" ? "DAWN" : window.location.pathname
+            window.location.pathname === "/" ? "DAWN" : window.location.pathname.substring(1,window.location.pathname.length)
           }
         </h1>
         <p className="text-2xl font-extralight tracking-wider">
