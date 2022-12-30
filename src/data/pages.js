@@ -10,8 +10,8 @@ const pages = [
     id: 2
   },
   {
-    name: "services",
-    link: "/services",
+    name: "server",
+    link: "/server",
     id: 3
   },
   {
@@ -20,20 +20,26 @@ const pages = [
     id: 4
   },
   {
+    name: "contact",
+    link: "/contact",
+    id: 5
+  },
+  {
     name: "discord",
     link: "/discord",
-    id: 5
+    id: 6
   },
   {
     name: "store",
     link: "/store",
-    id: 6
+    id: 7
   },
   {
     name: "marketplace",
     link: "/marketplace",
-    id: 7
+    id: 8
   },
+  
 ]
 
 export default pages;
