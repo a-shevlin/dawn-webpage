@@ -15,6 +15,7 @@ package-lock.json
 # misc
 .DS_Store
 .firebase
+/src/firebase.js
 .env
 .env.local
 .env.development.local
