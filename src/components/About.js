@@ -7,7 +7,7 @@ function About() {
   
   return(
     <React.Fragment>
-      <div className="w-8/9 mx-auto p-10 dark:bg-slate-800 dark:text-zinc-300">
+      <div className="w-full mx-auto p-10 bg-stone-200 dark:bg-slate-800 dark:text-zinc-300">
         <img src={logo} alt="image of dawn servers logo" className="w-90 block mx-auto"/>
         <p className="text-center text-xl">Dawn consists of over 15 talented builders, designers, developers, writers, and event planners. We use our expertise to create enjoyable minecraft experiences and content with the intention of enspiring happiness for people who use or view our work.</p>
         <div className="mx-auto w-full grid grid-cols-1 md:grid-cols-2 gap-12 py-5 uppercase">
