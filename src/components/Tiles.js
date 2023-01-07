@@ -1,21 +1,33 @@
-import React from "react";
+import React, { useState } from "react";
 import PropTypes from "prop-types";
+import { Link } from "react-router-dom"
 
 
 function Tiles(props) {
+  const [hover, setHover] = useState(false);
+
+  const onHover = () => {
+    setHover(!hover)
+  }
   return(
     <React.Fragment>
-      <div className="w-full h-full mx-auto text-center p-1 overflow-hidden relative cursor-pointer hover:brightness-75 dark:hover:brightness-125">
-        <img className="object-cover w-full min-h-52 h-80 " src={props.img} alt={props.id}/>
-        <div class="absolute w-full p-2.5 top-0 inset-x-0 text-slate-100 text-lg text-left select-none">
-          <p className="font-light tracking-wide">
-            {props.name}
-          </p>
-          <p className="text-sm font-thin">
-            {props.builder}  
-          </p>
+      <Link to={`/project/${props.title}`} state={{tile: props}}>      
+        <div className="w-full h-full mx-auto text-center p-1 overflow-hidden relative" onMouseEnter={onHover} onMouseLeave={onHover}>
+          <img className={`object-cover w-full min-h-52 h-80 ${hover && "brightness-50"} ${!hover && "brightness-75"} transition-all duration-100`} src={props.img} alt={props.id}/>
+          <div className="absolute w-full h-full top-0 inset-x-0 text-3xl text-left text-slate-200 select-none cursor-pointer opacity-0 hover:opacity-100 hover:brightness-100 transition-all duration-200">
+            <div className="w-full h-full flex items-center justify-center">
+              <div className="w-full block text-center">
+                <p className="font-bold tracking-wide hover:brightness-100">
+                  {props.title}
+                </p>
+                {/* <p className="text-lg semibold hover:brightness-100">
+                  Built by: {props.builder}!
+                </p> */}
+              </div>
+            </div>
+          </div>
         </div>
-      </div>
+      </Link>
     </React.Fragment>
   )
 }
@@ -23,8 +35,9 @@ function Tiles(props) {
 export default Tiles;
 
 Tiles.propTypes = {
-  name: PropTypes.string,
+  title: PropTypes.string,
   builder: PropTypes.string,
+  desc: PropTypes.string,
   img: PropTypes.string,
   id: PropTypes.number
 }
