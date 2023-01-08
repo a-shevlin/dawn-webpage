@@ -1,7 +1,7 @@
 <h1 align="center">
   Dawn Servers
   <br />
-  <a href="wip.dawnservers.com" target="_blank">WIP</a>
+  <a href="https://wip.dawnservers.net" target="_blank">WIP</a>
 </h1>
 
 ## Technologies Used
