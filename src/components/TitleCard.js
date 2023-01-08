@@ -63,10 +63,10 @@ function TitleCard(props) {
 
   return (
     <React.Fragment>
-      <div className={`w-full flex flex-col justify-center bg-cover sticky bg-[url(../assets/dawn-bg.png)] bg-no-repeat bg-center h-full z-0`}>
+      <div className={`w-full flex flex-col justify-center bg-cover bg-[url(../assets/dawn-bg.png)] bg-no-repeat bg-center h-full z-0`}>
         <div className='w-2/3 flex justify-center items-center m-auto h-full'>
 
-          <div className={`text-red-100 fixed font-mono mx-auto my-auto drop-shadow-lg font-bold p-0 text-center uppercase ${hidden && 'hidden'}`} style={{opacity: opacity}}>
+          <div className={`text-red-100 font-mono mx-auto my-auto drop-shadow-lg font-bold p-0 text-center uppercase ${hidden && 'hidden'}`} style={{opacity: opacity}}>
             <img className="w-32 block mx-auto" src={dawnLogo} alt="dawn logo" />
             <h1 className={`text-8xl tracking-wide text-white -mt-4 scale-y-90`}>
               {
