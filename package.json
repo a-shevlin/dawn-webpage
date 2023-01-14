@@ -4,6 +4,8 @@
   "private": true,
   "dependencies": {
     "@emailjs/browser": "^3.9.1",
+    "@shopify/app-bridge-react": "^3.7.0",
+    "@shopify/shopify-api": "^6.1.0",
     "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
