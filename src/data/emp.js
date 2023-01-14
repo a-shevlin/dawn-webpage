@@ -15,21 +15,21 @@ const data = [
     name: 'Nate Orobono',
     mc: 'Sly3G',
     img: sly,
-    job: 'Builder, 3D-Modeler, Owner',
+    job: 'Owner, Builder, 3D-Modeler',
   },
   {
     id: 1,
     name: 'Emery',
     mc: 'Emery_Exe',
     img: em,
-    job: 'Builder, Writer, Planer',
+    job: 'Owner, Builder, Writer, Planner',
   },
   {
     id: 2,
     name: 'Alex Shevlin',
     mc: 'woermboy',
     img: al,
-    job: 'Builder, 3D-Modeler, Developer',
+    job: 'Owner, Developer, Builder, 3D-Modeler',
   },
   {
     id: 3,
@@ -47,10 +47,10 @@ const data = [
   },
   {
     id: 5,
-    name: 'FlapjackTM2',
-    mc: 'FlapjackTM2',
+    name: 'Gabriel Rose',
+    mc: 'Jabeu',
     img: fj,
-    job: 'Backend Developer',
+    job: 'Builder, Backend Developer',
   },
   {
     id: 6,
