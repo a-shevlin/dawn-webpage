@@ -28,6 +28,9 @@ function App() {
             builder: doc.data().builder,
             title: doc.data().title,
             desc: doc.data().desc,
+            timeline: doc.data().timeline,
+            size: doc.data().size,
+            embed: doc.data().embed,
           });
         });
         setTileList(dbTiles);

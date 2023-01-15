@@ -39,5 +39,8 @@ Tiles.propTypes = {
   builder: PropTypes.string,
   desc: PropTypes.string,
   img: PropTypes.string,
+  timeline: PropTypes.string,
+  size: PropTypes.string,
+  embed: PropTypes.string,
   id: PropTypes.number
 }

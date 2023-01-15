@@ -16,6 +16,9 @@ function AllTiles(props) {
               builder={tile.builder}
               desc={tile.desc}
               id={tile.id}
+              size={tile.size}
+              timeline={tile.timeline}
+              embed={tile.embed}
               key={tile.id}
             />
             ))}
