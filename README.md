@@ -20,7 +20,7 @@ _A company website for Dawn Servers. Organized for users to find information rel
 ## Further TODO
 
 - [ ] Shopify
-- [ ] Server, News, Store, and Marketplace Pages
+- [ ] News, Store, and Marketplace Pages
 - [ ] Rework TitleCard.js for better scroll functionality
 - [ ] Adjust for future forum use? (login and post?)
 
