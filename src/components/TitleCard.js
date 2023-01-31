@@ -13,7 +13,7 @@ function TitleCard(props) {
   // const location = useLocation()
 
   useEffect(() => {  
-    console.log(window.scrollY + " window scroll Y")
+    // console.log(window.scrollY + " window scroll Y")
     
     // might need to change based on screen size
     window.onscroll =()=>{
