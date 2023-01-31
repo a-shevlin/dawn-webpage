@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { TitleCard, Home, PageLinks, About, Contact, TileDetails } from './components';
+import { TitleCard, Home, PageLinks, About, Contact, TileDetails, Anthum } from './components';
 import { collection, addDoc, onSnapshot, setDoc, doc, updateDoc, deleteDoc } from 'firebase/firestore';
 import  { db } from './firebase';
 import {
@@ -52,6 +52,7 @@ function App() {
             <Route path='/About' element={<About />} />
             <Route path='/Contact' element={<Contact />} />
             <Route path='/project/:id' element={<TileDetails tileList={tileList}/>} />
+            <Route path='/Anthum' element={<Anthum />} />
           </Routes>
           {/* <div className="flex-1 w-full z-10 h-full">
             <Home />
