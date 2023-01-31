@@ -10,8 +10,8 @@ const pages = [
     id: 2
   },
   {
-    name: "server",
-    link: "/server",
+    name: "anthum",
+    link: "/anthum",
     id: 3
   },
   {
